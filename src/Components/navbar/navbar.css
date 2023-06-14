@@ -1,0 +1,121 @@
+nav {
+  background-color: #102a42;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem; */
+  padding: 0 10px;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  /* color: var(--clr-primary-5); */
+  color: aliceblue;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle-cross {
+  font-size: 1.8rem;
+  /* color: var(--clr-primary-5); */
+  color: aliceblue;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+/* .nav-toggle:hover {
+  color: white;
+  transform: rotate(90deg);
+} */
+.logo {
+  height: 60px;
+}
+.links a {
+  /* color: var(--clr-grey-8); */
+  color: aliceblue;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  /* letter-spacing: var(--spacing); */
+  letter-spacing: normal;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+.links a:hover {
+  /* background: var(--clr-primary-8); */
+  background-color: #467098;
+  /* color: var(--clr-primary-5); */
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #6ebef7;
+  /* border-radius: 2px; */
+}
+.social-icons {
+  display: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.show-container {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    padding: 0 10px;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 1rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    /* display: flex; */
+    display: flex;
+    font-size: 20px;
+  }
+  .social-icons a {
+    /* margin: 0 0.5rem; */
+    padding: 0 35px;
+    color: #6ebef7;
+  }
+  .social-icons a:hover {
+    color: #1a5f90;
+  }
+}
+
+@media screen and (max-width: 943px) {
+  .links a {
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+    /* padding: 0 10px; */
+  }
+}
